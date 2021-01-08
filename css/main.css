@@ -33,10 +33,7 @@ img{
 }
 table{
   margin: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 10px 30px 15px;
 }
 
 li{
@@ -73,8 +70,11 @@ p:first-of-type{
 }
 
 blockquote{
+  /*position: relative;*/
+  quotes: '"' '"';
   width: 50%;
-  margin: auto;
+  margin: 0 auto;
+  display: block;
   font-size: 160%;
   background-color: lightgrey;
   border-left: 3px solid;
@@ -82,6 +82,13 @@ blockquote{
   padding-left: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 300%;
+  vertical-align: bottom;
+  display: inline-block;
 }
 
 cite{
@@ -96,10 +103,6 @@ caption{
   caption-side: bottom;
   font-size: 80%;
   color: #313131;
-  font-style: italic;
-}
-
-q{
   font-style: italic;
 }
 
