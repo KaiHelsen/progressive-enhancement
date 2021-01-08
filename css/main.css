@@ -12,17 +12,37 @@ body{
   /*background-repeat: no-repeat;*/
   /*background-position: bottom right;*/
   /*background-size: cover;*/
-  background: rgb(150,214,233);
-  background: linear-gradient(228deg, rgba(150,214,233,1) 1%, rgba(231,231,231,1) 89%);
+  /*Overwriting background gradient and image with a flat colour for aesthetic purposes*/
+  /*background: rgb(150,214,233);*/
+  /*background: linear-gradient(228deg, rgba(150,214,233,1) 1%, rgba(231,231,231,1) 89%);*/
+  background-color: #25353e;
   max-width: 90%;
   margin: auto;
-  color: black;
+  color: white;
   font-family: 'roboto', sans-serif;
   font-size: 22px;
 }
 
+nav{
+  color: white;
+  padding: 6px;
+  padding-bottom: 60px;
+  position: fixed;
+  top: 0px;
+  left:0px;
+  width: 20%;
+  border: solid #ffffff 1px;
+  background-color: #334752;
+  border-bottom-right-radius: 1em;
+  text-align: center;
+}
+
 h1, h2{
   text-align: center;
+}
+
+nav > p{
+  color:inherit;
 }
 img{
   float: right;
@@ -30,9 +50,11 @@ img{
   max-width: 35%;
   margin-left: 20px;
   margin-right: 20px;
+  border-radius: 1em;
 }
 table{
-  margin: 20px;
+  margin: auto;
+  font-size: 140%;
   padding: 10px 30px 15px;
 }
 
@@ -44,28 +66,36 @@ th{
 }
 
 tr{
-  background: white;
+  background: #26445c;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 tr:nth-child(2n)
 {
-  background: dimgrey;
+  background: #1c3244;
 }
 
 header > h2{
-  background-color: darkgoldenrod;
+  background-color: #293036;
+  font-style: italic;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 p {
   font-family:'Open Sans', sans-serif;
   word-spacing: 3px;
   font-size: 20px;
-  color: #18365f;
+  color: #ffeae2;
 }
 
-p:first-of-type{
+/*p:first-letter{*/
+/*  color: #38568b;*/
+/*  text-transform: capitalize;*/
+/*}*/
+
+body > p:first-of-type{
   font-weight: bold;
 }
 
@@ -75,13 +105,12 @@ blockquote{
   width: 50%;
   margin: 0 auto;
   display: block;
-  font-size: 160%;
-  background-color: lightgrey;
-  border-left: 3px solid;
-  border-left-color: firebrick;
-  padding-left: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  color: #464646;
+  font-size: 140%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-left: 3px dashed;
+  border-left-color: #ff641a;
+  padding: 40px 60px;
 }
 
 blockquote:before {
@@ -89,6 +118,13 @@ blockquote:before {
   font-size: 300%;
   vertical-align: bottom;
   display: inline-block;
+}
+
+q{
+  margin-left: 20px;
+  margin-right: 20px;
+  /*display: block;*/
+  /*text-align: center;*/
 }
 
 cite{
@@ -108,7 +144,18 @@ caption{
 
 a{
   font-family: sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+footer{
+  font-size: 50%;
+}
+footer *{
+  font-size: inherit;
+}
+
+a:link{
+  color: coral;
 }
 
 a:hover{
@@ -116,16 +163,16 @@ a:hover{
 }
 
 a:visited{
-  color: tomato;
+  color: #cd3b20;
 }
 
 /*CLASSES*/
 .farmer{
-  color: purple;
+  color: #2879cd;
 }
 
 .villagers{
-  color: green;
+  color: #c65600;
 }
 .bad{
   text-transform: capitalize;
@@ -140,18 +187,54 @@ a:visited{
   color: white;
   padding: 6px;
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 30%;
-  border: solid #ffffff 3px;
-  background-color: #25353e;
-  border-radius: 16px;
+  bottom: 40px;
+  right: 40px;
+  width: 20%;
+  border: solid #ffffff 1px;
+  background-color: #334752;
+  border-radius: 1em;
   text-align: center;
 }
 
 .centered {
   width: 50%;
   margin: auto;
+}
+
+.navlink:link{
+  /*this class is meant to indicate and customize navigation links*/
+  text-transform: uppercase;
+  color: white;
+
+  position: relative;
+  text-decoration: none;
+}
+
+.navlink:hover, .navlink:visited{
+  color: white;
+}
+
+.navlink::before{
+  content : "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all .3s ease-in-out 0s;
+}
+
+.navlink:hover::before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.shadowed{
+  /*adds a drop shadow to the element*/
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.3));
 }
 
 
