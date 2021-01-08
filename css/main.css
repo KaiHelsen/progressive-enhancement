@@ -1,3 +1,11 @@
+@font-face{
+  font-family: 'East Sea Dokdo', cursive;
+
+  font-family: 'Open Sans', sans-serif;
+
+  font-family: 'Roboto', sans-serif;
+}
+
 body{
 
   /*background-image: url('../img/PMH_160810_161846_0587.jpeg');*/
@@ -8,7 +16,16 @@ body{
   background: -webkit-linear-gradient(-61deg, rgb(36, 35, 56), rgb(183, 183, 183));
   max-width: 90%;
   margin: auto;
+  font-family: 'roboto', sans-serif;
 }
+
+img{
+  float: left;
+  max-width: 35%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 tr{
   background: white;
 }
@@ -17,15 +34,20 @@ tr:nth-child(2n)
 {
   background: dimgrey;
 }
+
 header > h2{
   background-color: darkgoldenrod;
 }
 
 p {
-  font-family: serif;
+  font-family:'Open Sans', sans-serif;
   word-spacing: 3px;
   font-size: 20px;
   color: #18365f;
+}
+
+p:first-of-type{
+  font-weight: bold;
 }
 
 blockquote{
@@ -74,3 +96,16 @@ a:visited{
   text-transform: capitalize;
   color: green;
 }
+.notification{
+  color: white;
+  padding: 6px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30%;
+  border: solid #ffffff 3px;
+  background-color: #25353e;
+  border-radius: 16px;
+  text-align: center;
+}
+
