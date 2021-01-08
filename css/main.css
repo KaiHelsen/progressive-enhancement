@@ -12,22 +12,44 @@ body{
   /*background-repeat: no-repeat;*/
   /*background-position: bottom right;*/
   /*background-size: cover;*/
-  background: linear-gradient(-61deg, rgb(36, 35, 56), rgb(183, 183, 183));
-  background: -webkit-linear-gradient(-61deg, rgb(36, 35, 56), rgb(183, 183, 183));
+  background: rgb(150,214,233);
+  background: linear-gradient(228deg, rgba(150,214,233,1) 1%, rgba(231,231,231,1) 89%);
   max-width: 90%;
   margin: auto;
+  color: black;
   font-family: 'roboto', sans-serif;
+  font-size: 22px;
 }
 
+h1, h2{
+  text-align: center;
+}
 img{
-  float: left;
+  float: right;
+  float-displace: indent;
   max-width: 35%;
   margin-left: 20px;
   margin-right: 20px;
 }
+table{
+  margin: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+li{
+  text-align: left;
+}
+th{
+  font-weight: bold;
+}
 
 tr{
   background: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 tr:nth-child(2n)
@@ -60,6 +82,21 @@ blockquote{
   padding-left: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+cite{
+  display: block;
+  text-align: right;
+  padding-right: 60px;
+  color: dodgerblue;
+  font-size: 120%;
+}
+
+caption{
+  caption-side: bottom;
+  font-size: 80%;
+  color: #313131;
+  font-style: italic;
 }
 
 q{
@@ -108,4 +145,10 @@ a:visited{
   border-radius: 16px;
   text-align: center;
 }
+
+.centered {
+  width: 50%;
+  margin: auto;
+}
+
 
