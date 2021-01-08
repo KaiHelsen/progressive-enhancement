@@ -68,13 +68,15 @@ th{
 
 tr{
   background: #26445c;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 tr:nth-child(2n)
 {
   background: #1c3244;
+}
+
+td{
+  padding: 5px 20px 5px 10px;
 }
 
 header > h2{
@@ -139,7 +141,7 @@ cite{
 caption{
   caption-side: bottom;
   font-size: 80%;
-  color: #313131;
+  color: #a0a0a0;
   font-style: italic;
 }
 
